@@ -154,7 +154,7 @@ def event_handle(event):
         elif (msg == "ไปเที่ยวมั้ย") :
             replyObj = TextSendMessage(text="ไปสิๆ")
         elif (msg == "ทำการบ้านรึยัง") :
-            replyObj = TextSendMessage(text="ทำแล้ว")
+            replyObj = TextSendMessage(text="ทำแล้วสิ")
         elif (msg == "กินข้าวกับอะไรดี") :
             replyObj = TextSendMessage(text="อะไรก็ได้ที่อร่อย")
             line_bot_api.reply_message(rtoken, replyObj)
