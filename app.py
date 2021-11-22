@@ -149,14 +149,14 @@ def event_handle(event):
 
     if msgType == "text":
         msg = str(event["message"]["text"])
-        if msg == "สวัสดีค้าบ":
-           replyObj = TextSendMessage(text="ดีจ้า")
+        if msg == "ดีจ้า":
+           replyObj = TextSendMessage(text="มีอะไรไหมคะ")
            line_bot_api.reply_message(rtoken, replyObj)
-       elif msg == "กินข้าวกับอะไรดี":
-           replyObj = TextSendMessage(text="อะไรก็ได้ที่อร่อย")
+       elif msg == "หิว":
+           replyObj = TextSendMessage(text="อย่าลืมกินข้าวด้วยนะ")
            line_bot_api.reply_message(rtoken, replyObj)
-       elif msg == "ชอบbtsไหม":
-           replyObj = TextSendMessage(text="ชอบมาก")
+       elif msg == "น่ารักจัง":
+           replyObj = TextSendMessage(text="ขอบคุณค่า")
            line_bot_api.reply_message(rtoken, replyObj)
        else :
            headers = request.headers
